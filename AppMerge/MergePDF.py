@@ -346,7 +346,7 @@ def mergeFinalCI(FileServer, ubigeos, fase):
 
 
 def mergePDF(FileServer, pathlistados, pathcroquis, pathRutas, ubigeos, fase, tipo):
-    # mergeEmpadronadores(FileServer, pathlistados, pathcroquis, pathRutas, ubigeos, fase, tipo)
+    mergeEmpadronadores(FileServer, pathlistados, pathcroquis, pathRutas, ubigeos, fase, tipo)
     if tipo == 1:
        mergeSeccion(FileServer, pathcroquis, pathlistados, pathRutas, ubigeos, fase)
     else:

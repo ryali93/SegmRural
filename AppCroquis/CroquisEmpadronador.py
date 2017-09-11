@@ -293,7 +293,7 @@ def CroquisEmpadronador(ubigeos, WorkSpaceCroquis, mxd_croquis_emp, tipo):
         informacionCabecera(ubigeo, mxd)
         agregarLyrUbigeo(mxd, ubigeo[0], "UBIGEO")
 
-        for ruta in datosRutas(ubigeo[0])[20:]:
+        for ruta in datosRutas(ubigeo[0]):
             informacioCabeceraRutasSCR(mxd, ruta[1], tipo)
 
             for emp in dataEmp(ruta[0]):
