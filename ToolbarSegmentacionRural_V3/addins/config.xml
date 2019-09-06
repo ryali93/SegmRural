@@ -1,0 +1,17 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>SegmentacionRural</Name><AddInID>{c20fa505-9b18-4b33-b343-57a3a6e7986b}</AddInID><Description>Herramientas personalizadas que apoyan el proceso de Segmentaci&#243;n rural, para los Censos Nacionales de Poblaci&#243;n y Vivienda 2017</Description><Version>0.1</Version><Image>Images\inei.png</Image><Author>Daniel Fernanado Aguado HUaccharaqui</Author><Company>Instituto Nacional de Estadistica e Inform&#225;tica - INEI</Company><Date>03/21/2017</Date><Targets><Target name="Desktop" version="10.1" /></Targets><AddIn language="PYTHON" library="addins_addin.py" namespace="addins_addin"><ArcMap>
+    <Commands>
+        <Button caption="Importar Informaci&#243;n" category="SegmentacionRural" class="ImportarInformacion" id="addins_addin.boton1" image="Images\descarga.png" message="Importa informaci&#243;n de Centros poblados, AER, tracks, etc; de la base de datos espacial INEI" tip="Importa informacion segun ubigeo y usuario"><Help heading="" /></Button>
+        <Button caption="Generar rutas" category="SegmentacionRural" class="Crearcaparutas" id="addins_addin.boton2" image="Images\rutas.png" message="Crea un archivo feature class dentro de la geodatabase descargada, este feature cuenta con los campos necesarios para iniciar su edici&#243;n" tip="Genera la capa de ruta dentro de la Geodatabase"><Help heading="" /></Button>
+        <Button caption="Orden de centros poblados" category="SegmentacionRural" class="OrdenCentrosPoblados" id="addins_addin.boton3" image="Images\ccpps.png" message="Genera el feature class de centros poblados dentro de la Geodatabase descargada; este feature cuenta con la rutas asociadas y el conjunto de campos necesarios para proceder con la edici&#243;n" tip="Genera la capa de centros poblados para asignar el orden"><Help heading="" /></Button>
+        <Button caption="Generar secciones" category="SegmentacionRural" class="GenerarSecciones" id="addins_addin.boton4" image="Images\Seccion.png" message="Genera el feature class de secciones dentro de la geodatabase, previamente realiza la consistencia de datos." tip="Genera el feature class de secciones"><Help heading="" /></Button>
+        <Button caption="Generar resultados" category="SegmentacionRural" class="GenerarResultados" id="addins_addin.boton5" image="Images\crearTabla.png" message="Genera los feature class finales para ser cargados a la geodatabase nuevamente, debe ser validado por el jefe de equipo." tip="Genera los feature class finales"><Help heading="" /></Button>
+        <Button caption="Cargar resultados" category="SegmentacionRural" class="CargarResultados" id="addins_addin.boton6" image="Images\carga.png" message="Carga los feature class resultado dentro de la geodatabase; debe contar con la aprobaci&#243;n del jefe de equipo para proceder con la generaci&#243;n de croquis y listados" tip="Cargar resultados"><Help heading="" /></Button>
+        </Commands>
+    <Extensions>
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="Segmentacion Rural" category="SegmentacionRural" id="addins_addin.toolbar01" showInitially="true"><Items><Button refID="addins_addin.boton1" /><Button refID="addins_addin.boton2" /><Button refID="addins_addin.boton3" /><Button refID="addins_addin.boton4" /><Button refID="addins_addin.boton5" /><Button refID="addins_addin.boton6" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
